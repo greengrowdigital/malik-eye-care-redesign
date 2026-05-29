@@ -24,10 +24,10 @@ export default function Contact() {
       <PageHero
         eyebrow="— Contact"
         title={lang === 'en'
-          ? ['Talk', <span key="s" className="italic text-[var(--color-gold-deep)]">to us.</span>]
-          : ['Habla', <span key="s" className="italic text-[var(--color-gold-deep)]">con nosotros.</span>]
+          ? ['Talk', 'to us.', <span key="s1" className="italic text-[var(--color-gold-deep)]">Five offices,</span>, 'one front desk.']
+          : ['Habla', 'con nosotros.', <span key="s1" className="italic text-[var(--color-gold-deep)]">Cinco oficinas,</span>, 'una recepción.']
         }
-        lede={lang === 'en' ? 'For appointment requests, insurance verification, or general questions.' : 'Para solicitudes de cita, verificación de seguro o preguntas generales.'}
+        lede={lang === 'en' ? 'For appointment requests, insurance verification, or general questions. We answer within one business day.' : 'Para solicitudes de cita, verificación de seguro o preguntas generales. Respondemos en un día hábil.'}
       />
 
       <section className="bg-[var(--color-paper)] py-16 lg:py-24">

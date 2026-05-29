@@ -48,8 +48,8 @@ export default function Testimonials() {
       <PageHero
         eyebrow="— Testimonials"
         title={lang === 'en'
-          ? ['In our patients\'', <span key="s" className="italic text-[var(--color-gold-deep)]">words.</span>]
-          : ['En las palabras', <span key="s" className="italic text-[var(--color-gold-deep)]">de nuestros pacientes.</span>]
+          ? ['In', 'our patients\'', <span key="s1" className="italic text-[var(--color-gold-deep)]">own</span>, 'words.']
+          : ['En', 'las palabras', <span key="s1" className="italic text-[var(--color-gold-deep)]">propias de</span>, 'nuestros pacientes.']
         }
         lede={lang === 'en'
           ? 'Selected reviews from across our five locations.'

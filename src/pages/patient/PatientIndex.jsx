@@ -44,12 +44,12 @@ export default function PatientIndex() {
       <PageHero
         eyebrow="— Patients"
         title={lang === 'en'
-          ? ['Patient', <span key="s" className="italic text-[var(--color-gold-deep)]">resources.</span>]
-          : ['Recursos para', <span key="s" className="italic text-[var(--color-gold-deep)]">pacientes.</span>]
+          ? ['Forms,', 'financing,', <span key="s1" className="italic text-[var(--color-gold-deep)]">education —</span>, 'calmly collected.']
+          : ['Formularios,', 'financiamiento,', <span key="s1" className="italic text-[var(--color-gold-deep)]">educación —</span>, 'recopilado con calma.']
         }
         lede={lang === 'en'
-          ? 'Forms, instructions, financing and education — collected in one calm place.'
-          : 'Formularios, instrucciones, financiamiento y educación — en un solo lugar tranquilo.'
+          ? 'Everything you might need before, during and after your visit.'
+          : 'Todo lo que podrías necesitar antes, durante y después de tu visita.'
         }
       />
 

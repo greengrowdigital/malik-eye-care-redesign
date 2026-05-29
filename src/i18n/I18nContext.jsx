@@ -14,9 +14,7 @@ export function I18nProvider({ children }) {
         setLang(stored);
         document.documentElement.lang = stored;
       } else {
-        const browser = navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en';
-        setLang(browser);
-        document.documentElement.lang = browser;
+        document.documentElement.lang = 'en';
       }
     } catch {}
   }, []);
@@ -62,7 +60,8 @@ export function useI18n() {
 }
 
 export function tField(obj, lang) {
-  if (!obj) return '';
+  if (obj == null) return '';
   if (typeof obj === 'string') return obj;
+  if (Array.isArray(obj)) return obj.map((item) => tField(item, lang));
   return obj[lang] ?? obj.en ?? '';
 }

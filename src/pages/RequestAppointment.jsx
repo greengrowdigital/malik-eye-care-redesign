@@ -39,12 +39,12 @@ export default function RequestAppointment() {
       <PageHero
         eyebrow="— Booking"
         title={lang === 'en'
-          ? ['Request', <span key="s" className="italic text-[var(--color-gold-deep)]">an appointment.</span>]
-          : ['Solicita', <span key="s" className="italic text-[var(--color-gold-deep)]">una cita.</span>]
+          ? ['Request', 'your visit.', <span key="s1" className="italic text-[var(--color-gold-deep)]">Three calm</span>, 'steps.']
+          : ['Solicita', 'tu visita.', <span key="s1" className="italic text-[var(--color-gold-deep)]">Tres pasos</span>, 'tranquilos.']
         }
         lede={lang === 'en'
-          ? 'Three short steps. A care coordinator confirms within one business day.'
-          : 'Tres pasos cortos. Un coordinador confirma en un día hábil.'
+          ? 'Tell us who, where, and when. A care coordinator confirms within one business day.'
+          : 'Cuéntanos quién, dónde y cuándo. Un coordinador confirma en un día hábil.'
         }
       />
 

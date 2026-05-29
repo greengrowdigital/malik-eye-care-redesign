@@ -47,12 +47,12 @@ export default function About() {
       <PageHero
         eyebrow="— About the practice"
         title={lang === 'en'
-          ? ['Eye care is', <span key="s" className="italic text-[var(--color-gold-deep)]">personal.</span>]
-          : ['El cuidado visual', <span key="s" className="italic text-[var(--color-gold-deep)]">es personal.</span>]
+          ? ['Thirty-seven', 'years of', <span key="s1" className="italic text-[var(--color-gold-deep)]">unhurried,</span>, 'personal eye care.']
+          : ['Treinta y siete', 'años de', <span key="s1" className="italic text-[var(--color-gold-deep)]">cuidado visual</span>, 'personal y sin prisa.']
         }
         lede={lang === 'en'
-          ? 'We have multiple locations across NY, so you are never far from quality eye care. At Malik Eye Care, no two vision problems are the same — and that is exactly how we treat them.'
-          : 'Tenemos múltiples consultorios en NY, así que nunca estás lejos del cuidado de calidad. En Malik Eye Care, ningún problema visual es igual a otro — y exactamente así los tratamos.'
+          ? 'Five offices across NY. Nine doctors. One belief: that no two vision problems are the same — and neither should be the treatment.'
+          : 'Cinco consultorios en NY. Nueve doctores. Una sola creencia: ningún problema visual es igual a otro — y el tratamiento tampoco debería serlo.'
         }
       />
 

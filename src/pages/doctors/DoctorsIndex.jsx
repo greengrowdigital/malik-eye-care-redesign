@@ -13,8 +13,8 @@ export default function DoctorsIndex() {
       <PageHero
         eyebrow="— Doctors"
         title={lang === 'en'
-          ? ['Nine doctors.', <span key="s" className="italic text-[var(--color-gold-deep)]">One standard.</span>]
-          : ['Nueve doctores.', <span key="s" className="italic text-[var(--color-gold-deep)]">Un solo estándar.</span>]
+          ? ['Nine', 'doctors.', <span key="s1" className="italic text-[var(--color-gold-deep)]">One unwavering</span>, 'standard of care.']
+          : ['Nueve', 'doctores.', <span key="s1" className="italic text-[var(--color-gold-deep)]">Un solo</span>, 'estándar firme.']
         }
         lede={lang === 'en'
           ? 'Board-certified ophthalmologists and fellowship-trained optometrists — many recognized among the top in the region.'

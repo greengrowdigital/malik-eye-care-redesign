@@ -19,8 +19,7 @@ export function MaskReveal({ children, delay = 0, className = '' }) {
     <span className={`block overflow-hidden ${className}`} style={{ lineHeight: 1 }}>
       <motion.span
         initial={{ y: '110%' }}
-        whileInView={{ y: 0 }}
-        viewport={{ once: true, amount: 0.4 }}
+        animate={{ y: 0 }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay }}
         className="block"
         style={{ lineHeight: 1 }}

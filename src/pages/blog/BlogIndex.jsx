@@ -15,12 +15,12 @@ export default function BlogIndex() {
       <PageHero
         eyebrow="— Journal"
         title={lang === 'en'
-          ? ['Vision care,', <span key="s" className="italic text-[var(--color-gold-deep)]">plainly written.</span>]
-          : ['Cuidado visual,', <span key="s" className="italic text-[var(--color-gold-deep)]">en lenguaje claro.</span>]
+          ? ['Vision care,', 'written', <span key="s1" className="italic text-[var(--color-gold-deep)]">plainly</span>, 'by the doctors.']
+          : ['Cuidado visual,', 'escrito', <span key="s1" className="italic text-[var(--color-gold-deep)]">con claridad</span>, 'por los doctores.']
         }
         lede={lang === 'en'
-          ? 'Notes from our doctors, written for patients — not journals.'
-          : 'Notas de nuestros doctores, escritas para pacientes — no para revistas científicas.'
+          ? 'Short, useful, no jargon — written for patients, not for journals.'
+          : 'Breve, útil, sin jerga — escrito para pacientes, no para revistas científicas.'
         }
       />
 
